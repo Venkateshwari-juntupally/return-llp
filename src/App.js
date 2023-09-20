@@ -26,7 +26,9 @@ function App() {
       ) : (
         <GreenLightRedLight difficulty={gameDifficulty} onGameEnd={handleGameEnd} user={userData}/>
       )}
+      {isGameWon && <p></p>}
     </div>
+    
   );
 }
 
